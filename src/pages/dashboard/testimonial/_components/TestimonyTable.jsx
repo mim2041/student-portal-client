@@ -1,7 +1,7 @@
 import { BiEdit } from 'react-icons/bi';
 
 
-const ResultTable = () => {
+const TestimonyTable = () => {
     return (
         <div className="mx-6 lg:mx-24 my-12">
             <h1 className='text-2xl text-blue-800 mb-8'>Recent Applications</h1>
@@ -59,4 +59,4 @@ const ResultTable = () => {
     );
 };
 
-export default ResultTable;
+export default TestimonyTable;

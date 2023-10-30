@@ -5,7 +5,7 @@ import ResultTable from "./_components/ResultTable";
 
 const ViewResult = () => {
   return (
-    <div>
+    <div className="bg-gray-50">
       <ResultHome></ResultHome>
       <ResultTable></ResultTable>
     </div>

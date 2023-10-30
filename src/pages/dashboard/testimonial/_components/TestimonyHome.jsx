@@ -4,7 +4,7 @@ const TestimonyHome = () => {
     return (
         <div>
             <AddBtn link={"/dashboard/apply-testimonial"} value={"Apply New Testimony"}></AddBtn>
-            <div className='my-36 mx-24'>
+            <div className='mt-36 mx-24'>
                 <h1 className='text-2xl text-blue-800'>Recent Activities</h1>
                 <div className='mt-8 flex gap-5'>
                     <div className='w-1/2 flex flex-col text-xl '>

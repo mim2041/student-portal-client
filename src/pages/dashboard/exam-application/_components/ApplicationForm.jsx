@@ -7,7 +7,7 @@ const ApplicationForm = () => {
       <h1 className="title text-4xl mb-3 text-blue-800 text-center ">
         Fill the Form
       </h1>
-      <hr className="w-full lg:w-1/5 mx-auto border-b-4 border-blue-800 mb-8 lg:mb-12 rounded" />
+      <hr className="w-full lg:w-1/3 mx-auto border-b-4 border-blue-800 mb-8 lg:mb-12 rounded" />
       <form className="w-full mx-auto flex flex-col items-center">
         <div className="form-control w-full max-w-xl lg:max-w-2xl">
           <label className="label">
