@@ -6,7 +6,6 @@ const ResultHome = () => {
         <div>
             <AddBtn link={"/dashboard/view-result"} value={"New Result"}></AddBtn>
             <div className='my-36 mx-24'>
-                <h1 className='text-2xl text-blue-800'>Recent Results</h1>
                 <div className='mt-8 flex gap-5'>
                     <div className='w-1/2 flex flex-col text-xl '>
                         <button className='my-2 bg-gradient-to-r from-blue-800 to-blue-500 text-white p-2 rounded-lg shadow-xl'>1st Year 1st Semester</button>

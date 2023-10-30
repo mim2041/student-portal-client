@@ -2,7 +2,7 @@ import BackBtn from "../../../../components/BackBtn";
 
 const ApplicationForm = () => {
   return (
-    <div className="py-12 lg:py-20 mx-8 lg:mx-24 flex flex-col items-center">
+    <div className="py-12 lg:py-20 mx-8 lg:mx-52 shadow-xl mt-8 flex flex-col items-center  bg-gray-50">
       <BackBtn link={"/dashboard/exam-application"}></BackBtn>
       <h1 className="title text-4xl mb-3 text-blue-800 text-center ">
         Fill the Form

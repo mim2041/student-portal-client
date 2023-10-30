@@ -10,16 +10,14 @@ import { useAuth } from "../hooks/Auth/useAuth";
 
 import PageNotFound from "../components/shared/PageNotFound/PageNotFound";
 import Login from "../pages/auth/Login";
-
 import Dashboard from "../pages/dashboard/Dashboard";
 import ViewResult from "../pages/dashboard/view-result/ViewResult";
 import Testimonial from "../pages/dashboard/testimonial/Testimonial";
 import EditProfile from "../pages/dashboard/dashboard-home/EditProfile";
-import Application from "../pages/dashboard/exam-application/_components/Application";
 import ApplicationForm from "../pages/dashboard/exam-application/_components/ApplicationForm";
-import ResultHome from "../pages/dashboard/view-result/_components/ResultHome";
 import Result from "../pages/dashboard/view-result/_components/Result";
 import Testimony from "../pages/dashboard/testimonial/_components/Testimony";
+import ExamApplication from "../pages/dashboard/exam-application/ExamApplication";
 
 const Routes = () => {
   const { token } = useAuth();
@@ -67,7 +65,7 @@ const Routes = () => {
 
         {
           path: "dashboard/exam-application",
-          element: <Application></Application>
+          element: <ExamApplication></ExamApplication>
         },
         {
           path: "dashboard/new-application",

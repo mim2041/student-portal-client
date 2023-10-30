@@ -3,7 +3,7 @@ import PrimaryButton from "../../../components/PrimaryBtn";
 
 const EditProfile = () => {
     return (
-        <div className="mt-32 mx-48 text-center bg-gray-50 py-12 rounded-lg shadow-xl">
+        <div className="mt-20 lg:mt-32 mx-6 lg:mx-48 text-center bg-gray-50 py-12 rounded-lg shadow-xl">
             <BackBtn link={"/dashboard"}></BackBtn>
             <h1 className="text-3xl font-bold text-blue-800">Edit Your Profile</h1>
 
