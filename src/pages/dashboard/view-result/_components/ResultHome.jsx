@@ -4,7 +4,7 @@ import AddBtn from '../../../../components/AddBtn';
 const ResultHome = () => {
     return (
         <div>
-            <AddBtn link={"/dashboard/view-result"} value={"New Result"}></AddBtn>
+            <AddBtn link={"/dashboard/apply-result"} value={"New Result"}></AddBtn>
             <div className='mt-36 mx-24'>
                 <div className='mt-8 flex gap-5'>
                     <div className='w-1/2 flex flex-col text-xl '>

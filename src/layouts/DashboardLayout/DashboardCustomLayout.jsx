@@ -26,7 +26,7 @@ const DashboardCustomLayout = () => {
       icon: <MdSettingsApplications className=" w-6 h-6" />,
     },
     {
-      path: "dashboard/result",
+      path: "dashboard/view-result",
       title: "View Result",
       icon: <PiFilesFill className=" w-6 h-6" />,
     },

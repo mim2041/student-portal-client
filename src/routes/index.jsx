@@ -18,6 +18,8 @@ import ApplicationForm from "../pages/dashboard/exam-application/_components/App
 import Result from "../pages/dashboard/view-result/_components/Result";
 import Testimony from "../pages/dashboard/testimonial/_components/Testimony";
 import ExamApplication from "../pages/dashboard/exam-application/ExamApplication";
+import TestimonyForm from "../pages/dashboard/testimonial/_components/TestimonyForm";
+import ResultForm from "../pages/dashboard/view-result/_components/ResultForm";
 
 const Routes = () => {
   const { token } = useAuth();
@@ -55,13 +57,16 @@ const Routes = () => {
         },
         {
           path: "dashboard/view-result",
-          element: <Result></Result>,
+          element: <ViewResult />,
+        },
+        {
+          path: "dashboard/apply-result",
+          element: <ResultForm></ResultForm>
         },
         {
           path: "dashboard/result",
-          element: <ViewResult/>
+          element: <Result></Result>
         },
-        
 
         {
           path: "dashboard/exam-application",
@@ -77,6 +82,10 @@ const Routes = () => {
         },
         {
           path: "dashboard/apply-testimonial",
+          element: <TestimonyForm></TestimonyForm>
+        },
+        {
+          path: "dashboard/testimony",
           element: <Testimony></Testimony>
         }
       ],
@@ -89,64 +98,6 @@ const Routes = () => {
       path: "/login",
       element: <Login></Login>,
     },
-    // {
-    //   path: "/",
-    //   element: <MainLayout></MainLayout>,
-    //   children: [
-    //     {
-    //       path: "",
-    //       element: <Home></Home>,
-    //     },
-    //     {
-    //       path: "our-team",
-    //       element: <Team></Team>,
-    //     },
-    //     {
-    //       path: "research/projects",
-    //       element: <Projects></Projects>,
-    //     },
-    //     {
-    //       path: "research/projects/:id",
-    //       element: <ProjectDetails></ProjectDetails>,
-    //     },
-    //     {
-    //       path: "research/publications",
-    //       element: <Publications></Publications>,
-    //     },
-    //     {
-    //       path: "research/publications/:id",
-    //       element: <PublicationDetails></PublicationDetails>,
-    //     },
-    //     {
-    //       path: "media-highlights",
-    //       element: <MediaHighLights />,
-    //     },
-    //     {
-    //       path: "public-health-initiatives",
-    //       element: <PublicHealthInitiatives />,
-    //     },
-    //     {
-    //       path: "opportunities",
-    //       element: <Opportunities />,
-    //     },
-    //     {
-    //       path: "about-us/mission",
-    //       element: <OurMision></OurMision>,
-    //     },
-    //     {
-    //       path: "about-us/vision",
-    //       element: <VisionSection></VisionSection>,
-    //     },
-    //     {
-    //       path: "about-us/goal",
-    //       element: <OurGoal></OurGoal>,
-    //     },
-    //     {
-    //       path: "about-us/acheivements",
-    //       element: <OurAchievment></OurAchievment>,
-    //     },
-    //   ],
-    // },
     {
       path: "*",
       element: <PageNotFound />,
